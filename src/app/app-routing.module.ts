@@ -9,7 +9,7 @@ import { ExchangeComponent } from './pages/trade/exchange/exchange.component';
 import { AddSectionComponent } from './pages/trade/liquidity/add-section/add-section.component';
 import { LiquidityComponent } from './pages/trade/liquidity/liquidity.component';
 import { EarnTabComponent } from './shared/earn-tab/earn-tab.component';
-import { SwapComponent } from './shared/swap/swap.component';
+// import { SwapComponent } from './shared/swap/swap.component';
 
 const routes: Routes = [
   {
@@ -17,20 +17,8 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'liquidity',
-    component: SwapComponent
-  },
-  {
-    path: 'add',
-    component: AddSectionComponent
-  },
-  {
     path: 'nfts',
     loadChildren: () => import('../app/pages/nfts/nfts.module').then(m => m.NftsModule)
-  },
-  {
-    path: 'swap',
-    component: SwapComponent
   },
   {
     path: 'earn',

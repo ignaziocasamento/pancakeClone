@@ -18,7 +18,7 @@ import { PoolsComponent } from "./pools/pools.component";
         PoolsComponent,
         PoolCollapseComponent,
         EarnTabComponent,
-        FarmsComponent
+        FarmsComponent,
     ],
     imports: [
         CommonModule,

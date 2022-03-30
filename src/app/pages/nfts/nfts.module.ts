@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FilterPipe } from 'src/app/shared/filter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SwitchTabComponent } from 'src/app/shared/switch-tab/switch-tab.component';
 
 
 
@@ -27,7 +28,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HotCollectionsComponent,
     NewestArrivalsComponent,
     NewestCollectionsComponent,
-    FilterPipe
+    FilterPipe,
+    SwitchTabComponent
   ],
   imports: [
     CommonModule,
@@ -36,7 +38,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     NgxPaginationModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ]
 })
 export class NftsModule { }

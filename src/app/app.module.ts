@@ -11,16 +11,10 @@ import { TradeAnythingComponent } from './pages/home/trade-anything/trade-anythi
 import { WinMillionsComponent } from './pages/home/win-millions/win-millions.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './pages/home/home/home.component';
-import { TradeComponent } from './pages/trade/trade/trade.component';
-import { ExchangeComponent } from './pages/trade/exchange/exchange.component';
-import { LiquidityComponent } from './pages/trade/liquidity/liquidity.component';
-import { AddSectionComponent } from './pages/trade/liquidity/add-section/add-section.component';
 import { CakeComponent } from './pages/home/cake/cake.component';
 import { StartInSecondsComponent } from './pages/home/start-in-seconds/start-in-seconds.component';
 import { HttpClientModule } from '@angular/common/http';
-import { LineChartComponent } from './shared/chart/line-chart/line-chart.component';
 import { ChartsModule } from 'ng2-charts';
-import { SwapComponent } from './shared/swap/swap.component';
 
 import {NgxPaginationModule} from 'ngx-pagination';
 import { UsedByMillionsComponent } from './pages/home/used-by-millions/used-by-millions.component';
@@ -38,14 +32,8 @@ import { UsedByMillionsComponent } from './pages/home/used-by-millions/used-by-m
     TradeAnythingComponent,
     WinMillionsComponent,
     HomeComponent,
-    TradeComponent,
-    ExchangeComponent,
-    LiquidityComponent,
-    AddSectionComponent,
     CakeComponent,
     StartInSecondsComponent,
-    LineChartComponent,
-    SwapComponent,
     UsedByMillionsComponent
   ],
   imports: [
@@ -53,7 +41,6 @@ import { UsedByMillionsComponent } from './pages/home/used-by-millions/used-by-m
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    ChartsModule,
     NgxPaginationModule
   ],
   providers: [],
