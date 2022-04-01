@@ -1,0 +1,242 @@
+.mainCont {
+    height: 500px;
+    background: linear-gradient(#E9F8FF,#EEF4FF );
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.subCont {
+    height: 465px;
+    width: 430px;
+    margin-top: 32px;
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid #E7E3EB;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+}
+.subContModal {
+    height: 624px;
+    width: 420px;
+    margin-top: -59px;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid #E7E3EB;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    position: fixed;
+}
+.darkBackground {
+    background-color: #56467cce;
+    position: absolute;
+    width: 100%;
+    height: 162.5vh;
+    margin-top: -60px;
+}
+.subCont .container-fluid {
+    width: 100%;
+    height: 100%;
+}
+.col2 {
+    border-top: 1px solid #E7E3EB;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.col2Modal {
+    border-top: 1px solid #E7E3EB;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.col3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col3 button {
+    height: 48px;
+    width: 95%;
+    color: white;
+    background-color: #21C7D4;
+    border: none;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col3 button:hover {
+    background-color: #6EDBE3;
+}
+.col1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col1Modal {
+    display: flex;
+    align-items: center;
+}
+.col-md-1 svg {
+    fill: var(--pancake-main-dark);
+}
+.col-md-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.col-md-7 .h5 {
+    color: var(--pancake-main-dark);
+    font-weight: bold;
+}
+.modalFirstCol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+.modalFirstCol .h5 {
+    color: var(--pancake-main-dark);
+    font-weight: bold;
+}
+.modalFirstCol svg {
+    cursor: pointer;
+}
+.col-md-4 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.col1 h6 {
+    color: #7a6eaa;
+    font-size: 13px;
+}
+.h5 h6 {
+    font-size: 12px;
+}
+.colCurrencyTop,
+.colCurrencyBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+}
+.colCurrencyTopModal {
+    display: flex;
+    width: 95%;
+    max-height: 50px;
+}
+.plusElement {
+    max-height: 10%;
+}
+.plusElement .h4 {
+    color: var(--pancake-main-light);
+    font-size: 20px;
+}
+.colCurrencyTopModal input {
+    height: 52px;
+    border: none;
+    background-color: #EEEEEE;
+    border-radius: 20px;
+    border: 1px solid #e1d0f2;
+    width: 100%;
+    padding-left: 15px;
+}
+.colCurrencyTopModal input:focus {
+    outline: solid #9284ca 3.5px;
+}
+.colCurrencyBottom input,
+.colCurrencyTop input {
+    height: 60px;
+    border: none;
+    background-color: #EEEEEE;
+    text-align: end;
+    border-radius: 15px;
+    border: 1px solid #E7E3EB
+}
+.colCurrencyBottom .h6,
+.colCurrencyTop .h6 {
+    color: var(--pancake-main-dark);
+    cursor: pointer;
+}
+.colCurrencyBottom .h6:hover,
+.colCurrencyTop .h6:hover, 
+::placeholder {
+    color: var(--pancake-main-light);
+    opacity: 1; 
+}
+  
+  :-ms-input-placeholder {
+   color: var(--pancake-main-light);
+}
+  
+  ::-ms-input-placeholder {
+   color: var(--pancake-main-light);
+}  
+.commonBases {
+    width: 100%;
+}
+.commonBases .h6 {
+    font-size: 14px;
+    color: #5d518c;
+}
+.commonIcon {
+    width: 100%;
+    min-height: 50px;
+    max-height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.commonIcon .col {
+    display: flex;
+}
+.commonIcon .h6 {
+    font-size: 16px;
+    cursor: pointer;
+}
+.bnbCol,
+.busdCol,
+.cakeCol,
+.btcbCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bnbCol img {
+    width: 34px;
+}
+.busdCol img,
+.cakeCol img,
+.btcbCol img {
+    width: 20px;
+}
+.commonCurrency {
+    width: 100%;
+    height: 365px;
+    overflow: scroll;
+}
+.commonCurrency .col {
+    margin: 25px;
+}
+.commonCurrency .col h6 {
+    font-size: 16px;
+    margin: -1px;
+    color: var(--pancake-main-dark);
+    cursor: pointer;
+}
+.commonCurrency .col .small {
+    color: var(--pancake-main-light);
+    font-size: 14px;
+}
+.escBtn {
+    margin-right: 20px;
+    fill: #6EDBE3;
+}

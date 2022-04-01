@@ -1,0 +1,32 @@
+@import '../trade-anything/trade-anything.component.css';
+
+.box-sec{
+  background-color:var(--pancake-secondary);
+  height: 500px;
+}
+
+.box-sec2{
+  background-color:var(--pancake-secondary);
+}
+
+.back{
+  background: url("../../../../assets/images/back.svg") no-repeat center;
+  background-size: cover;
+}
+
+.bottom2 h2{
+  color: #fff;
+}
+
+.bottom2 h4{
+ color:#fff;
+}
+
+.btn-empty:hover{
+  opacity:1;
+  text-decoration:underline;
+}
+
+.father{
+  width:300px;
+}

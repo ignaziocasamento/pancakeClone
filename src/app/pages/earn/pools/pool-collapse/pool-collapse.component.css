@@ -1,0 +1,55 @@
+@import '../../farms/farms-collapse/farms-collapse.component.css';
+
+p{
+  margin:0;
+  padding:0;
+}
+
+
+.coin-small{
+  width:40px;
+}
+
+.coin-fav{
+  margin-top:-40px;
+  margin-left:20px;
+}
+
+.cake-bnb{
+  width:90px;
+  margin-left:5rem;
+}
+.cake-bnb p strong{
+  color:var(--pancake-main-dark);
+}
+#font-t{
+  font-size:12px;
+  color:var(--pancake-main-light);
+}
+
+.details button{
+  color:var(--pancake-primary);
+}
+
+.exc-b{
+  height:30px;
+  color:var(--pancake-primary);
+  border-radius: 16px;
+  letter-spacing: 0.03em;
+  border: 2px solid var(--pancake-primary);
+  background-color: transparent;
+}
+
+.exc-b svg{
+  fill: var(--pancake-primary);
+  margin-bottom:5px;
+}
+
+.eBjzcL{
+  margin-left:15px;
+  fill: var(--pancake-main-light);
+}
+
+.box-litt p{
+  color: var(--pancake-secondary);
+}

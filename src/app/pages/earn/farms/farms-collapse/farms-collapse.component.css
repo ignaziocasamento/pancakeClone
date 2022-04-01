@@ -1,0 +1,109 @@
+.coins{
+  width:24px;
+}
+
+.coins p{
+  font-size: 12px;
+  color: var(--pancake-main-light);
+  text-align: left;
+}
+
+.coins h6{
+  display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width:20rem;
+    color: var(--pancake-main-dark)
+}
+
+.coin-fav{
+  margin-top: -30px;
+}
+
+.coins svg{
+  margin-left:10px;
+  fill: var(--pancake-main-light);
+}
+
+.coin-small{
+  width:20px;
+}
+
+.accordion-button::after{
+  display:none;
+}
+
+#space-box{
+  margin-right:5rem;
+}
+
+.link-icon{
+  margin-top:5px;
+}
+.link-icon a{
+  color:var(--pancake-primary);
+  text-decoration: none;
+}
+.link-icon a:hover{
+  text-decoration:underline;
+}
+.link-icon a svg{
+  margin-bottom:14px;
+  margin-left:3px;
+  fill: var(--pancake-primary);
+}
+
+.box-big{
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 0px;
+    max-height: 100px;
+    padding: 16px;
+    border: 2px solid rgb(238, 234, 244);
+    border-radius: 16px;
+    width:350px;
+}
+
+.bro{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:baseline;
+}
+
+.box-litt p{
+  color: var(--pancake-main-light);
+  font-size:13px;
+}
+
+.exc{
+  border-radius: 16px;
+  height:35px;
+  padding:0 24px;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+}
+
+.exc1{
+  padding-bottom:30px;
+  border:none;
+  height:40px;
+}
+
+.exc-b{
+  height:30px;
+  color:var(--pancake-main-light);
+  border-radius: 16px;
+  letter-spacing: 0.03em;
+  border: 2px solid var(--pancake-secondary);
+  background-color: transparent;
+}
+
+.exc-b svg{
+  fill: var(--pancake-secondary);
+  margin-bottom:5px;
+}
+
+.details button{
+  color:var(--pancake-primary);
+}

@@ -1,0 +1,45 @@
+<div class="container-fluid my-5">
+    <div class="container contHeader my-5">
+        <div class="col">
+            <h4 class="h4">
+                <strong>
+                    Hot Collections
+                </strong>
+            </h4>
+        </div>
+        <div class="col colView">
+            <div class="btn btn-empty">
+                View All
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid cardCont">
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-4 col-md-6 col-sm-12" *ngFor="let i of cards">
+                    <div class="container-fluid contPic">
+                        <div class="col col-md-8 nftUpper">
+                            <img src="{{i.img}}" alt="">
+                        </div>
+                        <div class="container circle">
+                            <img src="{{i.avatar}}" alt="">
+                        </div>
+                        <div class="col col-md-4 nftLower">
+                            <h6 class="h6">
+                                <strong>
+                                    {{i.name}}
+                                </strong>
+                            </h6>
+                            <h6 class="h6">
+                                <span class="diffCol">
+                                    Volume
+                                </span>
+                                {{i.value}}
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,117 @@
+.container-fluid {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#70B7F1, #E9F2F6 );
+}
+.subContainer {
+    width: 920px;
+    height: 600px;
+    background: linear-gradient(#CCE5F9, #F0F7FB );
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:5rem;
+}
+.container {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.cardContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card1, .card2 {
+    height: 360px;
+    width: 290px;
+    margin: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card1 {
+    transform: rotate(-3deg);
+    background: linear-gradient(#FFBA3F, #FFE66A);
+}
+.card2 {
+    transform: rotate(2deg);
+    background: linear-gradient(#7544D8, #5121B1);
+}
+.container h1 {
+    color: #7645D9;
+    font-weight: bold;
+}
+.container h1 span {
+    color: #280D5F;
+}
+.h6 {
+    color: #847CB3;
+}
+.card1 .row1,
+.card2 .row1 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.card2 .row1 svg {
+    color: white;
+}
+svg {
+    width: 60px;
+    height: 60px;
+}
+.card1 .row2,
+.row3,
+.row4,
+.row5,
+.card2 .row2 {
+    width: 100%;
+}
+.row2 h6,
+.row3 .h1,
+.row4 h6 {
+    color: #280D5F;
+    text-align: start;
+    font-weight: bold;
+}
+.row5 h6 {
+    color: #280d5fd9;
+    text-align: start;
+}
+.row6 {
+    width: 80%;
+    height: 50px;
+    background-color: rgb(31, 199, 212);
+    border-radius: 15px;
+    border-bottom: 2px solid rgb(31, 150, 212);
+    justify-content: center;
+    align-items: center;
+}
+.row6 h6 {
+    color: white;
+    height: 25px;
+    font-weight: bold;
+}
+.card2 .row2 h6 {
+    text-align: start;
+    color: white;
+}
+.card2 .row3 h1 {
+    color: #FEC415;
+}
+.card2 .row4 h6,
+.card2 .row5 h6 {
+    color: white;
+}
+
+

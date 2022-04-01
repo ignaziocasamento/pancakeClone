@@ -1,0 +1,55 @@
+<div class="container-fluid my-5">
+    <div class="container contHeader my-5">
+        <div class="col">
+            <h4 class="h4">
+                <strong>
+                    Newest Arrivals
+                </strong>
+            </h4>
+        </div>
+        <div class="col colView">
+            <div class="btn btn-empty">
+                View All
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid cardCont">
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-3 col-md-4 col-sm-6" *ngFor="let i of card">
+                    <div class="container-fluid contPic">
+                        <div class="col colImg">
+                            <img src="{{i.img}}" alt="">
+                        </div>
+                        <div class="col col2">
+                            <h6 class="h6 small">
+                                <span class="diffCol">
+                                    {{i.description}}
+                                </span>
+                            </h6>
+                        </div>
+                        <div class="col col3">
+                            <h6 class="h6">
+                                <strong>
+                                    {{i.name}}
+                                </strong>
+                            </h6>
+                        </div>
+                        <div class="col col4">
+                            <div class="col4Up">
+                                <h6 class="h6 small diffCol">
+                                    Asking price
+                                </h6>
+                            </div>
+                            <div class="col4Down">
+                                <h6 class="h6 colPrice diffCol">
+                                (${{i.price}})
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,99 @@
+/* You can add global styles to this file, and also import other style files */
+.container3 {
+    background-color: rgb(39, 38, 44);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+    color: white;
+}
+
+.box-b-b{
+  padding:40px;
+}
+
+.linea1 ul li h2{
+  color:rgb(154, 106, 255);
+  font-size:16px;
+  font-weight:bold;
+}
+
+#toggle-btn {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #9a9e8a;
+    background-image: url('/');
+    background-size: 100%;
+    border-radius: 24px;
+    border: 1px solid black;
+    position: relative;
+    transition: all ease-in-out .4s;
+    /* animati tutti gli elementi (all), accelerazione ease-in-out, durata 0.4 secondi */
+    cursor: pointer;
+    margin-left: -30px;
+    margin-top: 21px;
+
+}
+
+.linea1 ul li a:hover{
+  text-decoration: underline;
+}
+
+#orang{
+  color:var(--pancake-tertiary);
+}
+
+.box-brand div{
+  margin: 0 15px;
+  fill:rgb(184, 173, 210);
+}
+
+.sw-ch{
+  margin-left:40px;
+}
+
+hr {
+    border-bottom: 3px solid rgb(56, 50, 65);
+    width: 80%;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+#icone>.btn {
+margin-left: 60px;
+
+}
+
+.ico-col{
+  fill: rgb(184, 173, 210);
+}
+  
+.sc-gsDKAQ{
+    margin-left: 20px;
+}
+
+
+.ico-col span{
+  color: rgb(184, 173, 210);
+}
+
+.money{
+  color: rgb(184, 173, 210);
+}
+
+.a-padding svg{
+  fill:#fff;
+}
+
+.space-b-div ul li a{
+  margin: 0 15px;
+}

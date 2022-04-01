@@ -1,0 +1,161 @@
+.activityCont {
+    height: 150px;
+    width: 100%;
+    background: linear-gradient(0.25turn, #E6FDFF, #F1F0FF);
+}
+.activitySubCont {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.colLeft .col .h1 {
+    font-size: 64px;
+    color: #7645D9;
+}
+.tabCont {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    border-radius: 20px;
+}
+thead {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.firstCol {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+.imgCont {
+    min-width: 60px;
+    max-width: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    border-radius: 10px;
+}
+.descriptionCol {
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+}
+.myRow {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.myH6,
+.soldText,
+.regularText {
+    margin-top: 33px;
+}
+.eventSection {
+    min-width: 100px;
+    max-width: 100px;
+}
+.soldText {
+    color: #EE55A3;
+}
+.h6,
+.regularText {
+    color: var(--pancake-main-light);
+}
+
+.diffCol {
+    color: var(--pancake-main-dark);
+}
+.pagCont {
+    color: var(--pancake-main-dark);
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+} 
+.col-1 h6 {
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: 1px solid #d7caec6b;
+    background-color: #EEEAF4;
+    margin: 5px;
+    align-self: center;
+    cursor: pointer;
+}
+.col-1 h5 {
+    margin: 5px;
+}
+.col-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.col-2 h6,
+.col-2 a {
+    margin: 0px 5px;
+}
+.myCont .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+.rowUp input {
+    max-width: 80%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px solid #d7caec;
+    background-color: #EEEAF4;
+    color: var(--pancake-main-dark);
+}
+.colDescription {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}::placeholder {
+    color: var(--pancake-main-light);
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: var(--pancake-main-light);
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: var(--pancake-main-light);
+}
+.dropdown-menu {
+    min-width: 300px;
+}
+.check {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #d7caec;
+    background-color: #EEEAF4;
+    border-radius: 5px;
+}
+.checkedFilter {
+    background: url('https://img.icons8.com/office/100/31D0AA/checked-checkbox--v1.png');
+    background-size: contain;
+    border: none;
+}
+.myAnimation {
+    position: absolute;
+    top: 440px;
+    left: 625px;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+.loaderContainer {
+    height: 80vh;
+}

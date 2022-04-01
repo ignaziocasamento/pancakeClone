@@ -1,0 +1,17 @@
+<div>
+  <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs mb-3 d-flex flex-row justify-content-center scroll">
+    <li [ngbNavItem]="1">
+      <a ngbNavLink class="small_text green-b color" id="pills-exc-tab">Farms</a>
+      <ng-template ngbNavContent>
+        <psclone-farms></psclone-farms>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="2">
+      <a ngbNavLink class="small_text color" id="pills-liq-tab">Pools</a>
+      <ng-template ngbNavContent>
+        <psclone-pools></psclone-pools>
+      </ng-template>
+    </li>
+  </ul>
+
+  <div [ngbNavOutlet]="nav"></div>

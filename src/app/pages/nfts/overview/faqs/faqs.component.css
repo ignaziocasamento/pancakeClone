@@ -1,0 +1,40 @@
+.container-fluid {
+    background: linear-gradient(0.25turn, #F1ECF2, #E9F1F6)
+}
+.container {
+    max-width: 65%;
+    padding-top: 50px;
+}
+.myAccordion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.details {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.details .btn {
+    color: #21C7D4;
+}
+.col p {
+    color: var(--pancake-main-dark);
+}
+.diffCol {
+    color: var(--pancake-main-light);
+}
+.faqs {
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.097);
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    color: var(--pancake-main-light);
+}
+.text-center {
+    padding: 30px;
+    color: #21C7D4;
+}

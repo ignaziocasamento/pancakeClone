@@ -1,0 +1,33 @@
+@import '../trade-anything/trade-anything.component.css';
+
+.container{
+display: flex;
+justify-content: space-around;
+margin-bottom: -200px;
+margin-top: -150px;
+}
+.box3{
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   align-items: center;
+   justify-content: center;
+   font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top:5rem;
+}
+
+.box3 > p{
+  margin: 50px;
+   padding: 10px;
+   border-left: 1px solid rgb(215, 202, 236);
+   color:var(--pancake-main-light);
+   font-weight:400;
+}
+
+.box3 p > span{
+    color: var(--pancake-main-dark);
+    font-weight:bold;
+    font-size:24px;
+}
+

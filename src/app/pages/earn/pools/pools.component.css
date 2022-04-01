@@ -1,0 +1,74 @@
+@import '../farms/farms.component.css';
+
+.box-big{
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 0px;
+  padding: 30px;
+  border: 2px solid rgb(238, 234, 244);
+  border-radius: 16px;
+  width:270px;
+  background-color: #fff;
+}
+
+.bro{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items:baseline;
+}
+
+.bro h4{
+  color:var(--pancake-main-dark);
+}
+
+.bro button{
+  opacity:1;
+}
+.bro button:hover{
+  opacity:var(--pancake-hover-opacity);
+}
+
+#b-b{
+  height:48px;
+  padding: 0 24px;
+  border-radius:16px;
+  border:none;
+  color:#fff;
+  background-color: var(--pancake-main-light);
+  cursor:pointer;
+  fill:#fff;
+  opacity:1;
+}
+
+#b-b:hover{
+  opacity:var(--pancake-hover-opacity);
+}
+
+.box-litt p{
+color: var(--pancake-main-light);
+font-size:16px;
+font-weight: bold;
+fill:var(--pancake-main-light);
+}
+
+.exc{
+border-radius: 16px;
+height:35px;
+padding:0 24px;
+letter-spacing: 0.03em;
+font-size: 16px;
+box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+border:none;
+}
+
+.jumbo-c{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.b-font{
+  font-size: 12px;
+  color:var(--pancake-main-light);
+}

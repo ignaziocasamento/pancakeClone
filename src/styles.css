@@ -1,1 +1,235 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+@import 'assets/mediaQueries/media-queries.css';
+@import 'app/core/navbar/navbar.component.css';
+@import 'app/pages/home/hero/hero.component.css';
+@import 'app/pages/home/trade-anything/trade-anything.component.css';
+
+
+.logo2 {
+  border: 1px solid transparent;
+  border-radius: 350px;
+  float: right;
+}
+.logo-traduzione{
+  float: right;
+}
+.logo-impostazioni{
+  float: right;
+}
+.logo-footer{
+  background-color: black;
+}
+
+
+/* Brand Color Valentina */
+
+/* Colori Principali  */
+:root {
+--pancake-primary: rgb(31, 199, 212);
+--pancake-secondary: rgb(118, 69, 217);
+--pancake-tertiary: rgb(255, 178, 55);
+
+
+/* sfondi-Gradienti */
+--bg-gradient-primary: linear-gradient(139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%);
+--bg-gradient-secondary: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+--bg-gradient-tertiary: linear-gradient(rgb(255, 178, 55) 0%, rgb(255, 205, 81) 51.17%, rgb(255, 231, 106) 100%);
+
+/* dark-violet per i testi principali */
+--pancake-main-dark: rgb(40, 13, 95);
+
+/* light-violet per testi minori, icone e minori bottoni */
+--pancake-main-light: rgb(122, 110, 170);
+
+/* Opacità e ombre */
+--pancake-hover-opacity: 0.65;
+--pancake-btn-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+
+/* Colori del Footer */
+--text-secondary: rgb(154, 106, 255);
+--pancake-dark: rgb(39, 38, 44);
+--text-light: rgb(184, 173, 210);
+}
+
+
+
+
+/* Button Style Valentina */
+
+/* Start btn/form reset */
+:focus {
+outline: none;
+}
+
+.form-control {
+border-radius: 0;
+border: none;
+}
+
+.form-control:focus {
+background-color: #fff;
+border: none;
+outline: 0;
+box-shadow: none;
+}
+
+.btn{
+  margin-right:5px;
+}
+
+.btn:focus,
+.btn.focus {
+outline: 0;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+outline: 0;
+box-shadow: none;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+border: none;
+box-shadow: none;
+}
+
+.btn-success:focus,
+.btn-success.focus {
+box-shadow: none;
+}
+
+.btn-warning:focus,
+.btn-warning.focus {
+box-shadow: none;
+}
+
+.btn-danger:focus,
+.btn-danger.focus {
+box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+border: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+box-shadow: none;
+}
+
+.btn-success:not(:disabled):not(.disabled):active:focus,
+.btn-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-success.dropdown-toggle:focus {
+box-shadow: none;
+}
+
+.btn-warning:not(:disabled):not(.disabled):active:focus,
+.btn-warning:not(:disabled):not(.disabled).active:focus,
+.show > .btn-warning.dropdown-toggle:focus {
+box-shadow: none;
+}
+
+.btn-danger:not(:disabled):not(.disabled):active:focus,
+.btn-danger:not(:disabled):not(.disabled).active:focus,
+.show > .btn-danger.dropdown-toggle:focus {
+box-shadow: none;
+}
+
+.btn:not(:disabled):not(.disabled):active:focus,
+.btn:not(:disabled):not(.disabled).active:focus,
+.show > .btn.dropdown-toggle:focus {
+box-shadow: none;
+}
+
+/* End btn/form reset */
+
+.btn-full-small{
+border-radius: 16px;
+cursor:pointer;
+height:32px;
+padding:0 16px;
+letter-spacing: 0.03em;
+font-size: 16px;
+}
+
+.btn-full-tall{
+border-radius: 16px;
+cursor:pointer;
+height:48px;
+padding:0 24px;
+letter-spacing: 0.03em;
+font-size: 16px;
+}
+
+.btn-empty{
+border-radius: 16px;
+cursor:pointer;
+height:48px;
+padding:0 24px;
+letter-spacing: 0.03em;
+border: 2px solid var(--pancake-primary);
+background-color: transparent;
+}
+.btn-empty:hover{
+color:var(--pancake-primary);
+}
+
+
+
+
+/* Typography Ignazio */
+* {
+font-family: Kanit, sans-serif;
+}
+.bigger_text {
+font-size: 48px;
+font-weight: 600;
+line-height: 1.1;
+}
+.big_text {
+font-size: 32px;
+font-weight: 600;
+line-height: 1.1;
+}
+.regular_text {
+font-size: 20px;
+font-weight: 600;
+line-height: 1.1;
+}
+.small_text {
+font-size: 16px;
+font-weight: 400;
+line-height: 1.5;
+}
+.btn_text {
+font-size: 16px;
+font-weight: 600;
+justify-content: center;
+letter-spacing: 0.03em;
+line-height: 1;
+}
+
+/* SCROLLBAR  */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7A6EAA;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7A6EAA;
+}
