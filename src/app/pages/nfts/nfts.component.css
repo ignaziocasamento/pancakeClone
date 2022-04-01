@@ -1,0 +1,13 @@
+.h6 {
+    color: var(--pancake-main-light);
+    padding: 10px 10px;
+    height: 100%;
+    text-decoration: none;
+}
+.h6:hover {
+    background-color: #EFF4F5;
+}
+.pill {
+    border-bottom: 4px solid #1FC7D4;
+    border-radius: 2%;
+}
