@@ -31,7 +31,10 @@ export class ActivityComponent implements OnInit {
     this.s1 = this.activityService.getAll()
       .subscribe(res => {
         this.activityNfts = res;
-        this.filterEvent = res;
+        this.filterEvent = [];
+        setTimeout(() => {
+          this.filterEvent = res
+        }, 3000)
       });
     this.activityService.search.subscribe((value: any) => {
       this.searchKey = value;
