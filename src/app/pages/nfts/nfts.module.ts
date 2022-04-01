@@ -38,7 +38,10 @@ import { SwitchTabComponent } from 'src/app/shared/switch-tab/switch-tab.compone
     HttpClientModule,
     NgxPaginationModule,
     FormsModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule
+  ],
+  exports: [
+    SwitchTabComponent
   ]
 })
 export class NftsModule { }

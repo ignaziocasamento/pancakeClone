@@ -1,8 +1,8 @@
-<!-- <div class="container-fluid mainCont">
+<div class="container-fluid mainCont">
     <div class="container subCont">
         <div class="container-fluid col1 mx-2">
             <div class="col col-md-1">
-                <a href="javascript:void(0)" [routerLink]="['/liquidity']">
+                <a [routerLink]="['../../trade/liquidity']">
                     <svg viewBox="0 0 24 24" width="32px" color="text" xmlns="http://www.w3.org/2000/svg"
                         class="sc-bdvvtL wPKGk">
                         <path
@@ -65,7 +65,7 @@
             <button class="btn btn-full-small" href="javascript:void(0)" [routerLink]="['/add']">Connect Wallet</button>
         </div>
     </div>
-    
+
 
     <div class="darkBackground" *ngIf="showModal"></div>
     <div class="container subContModal" *ngIf="showModal">
@@ -104,7 +104,8 @@
                         </h6>
                     </div>
                     <div class="col cakeCol">
-                        <img src="../../../../../assets/liquidity-section/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.png" alt="">
+                        <img src="../../../../../assets/liquidity-section/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.png"
+                            alt="">
                         <h6 class="h6 my-2 mx-2">
                             CAKE
                         </h6>
@@ -117,7 +118,7 @@
                     </div>
                 </div>
                 <div class="commonCurrency">
-                    <div class="col"  *ngFor="let i of list">
+                    <div class="col" *ngFor="let i of list">
                         <h6 class="h6">
                             {{i.title}}
                         </h6>
@@ -129,4 +130,4 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>

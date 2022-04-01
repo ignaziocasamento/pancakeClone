@@ -1,15 +1,18 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { SwapComponent } from "src/app/shared/swap/swap.component";
+import { ExchangeComponent } from "./exchange/exchange.component";
+import { AddSectionComponent } from "./liquidity/add-section/add-section.component";
 import { LiquidityComponent } from "./liquidity/liquidity.component";
+import { TradeComponent } from "./trade/trade.component";
 
 const routes: Routes = [
     {
         path: '',
-        component: SwapComponent,
+        component: TradeComponent,
         children: [
-          { path: 'swap', component: SwapComponent },
+          { path: 'exchange', component: ExchangeComponent },
           { path: 'liquidity', component: LiquidityComponent },
+          { path: 'add', component: AddSectionComponent }
         ]
       }
 ]
