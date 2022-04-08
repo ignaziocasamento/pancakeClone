@@ -18,6 +18,7 @@ import { ChartsModule } from 'ng2-charts';
 
 import {NgxPaginationModule} from 'ngx-pagination';
 import { UsedByMillionsComponent } from './pages/home/used-by-millions/used-by-millions.component';
+import { LoginComponent } from './core/login/login.component';
 
 
 
@@ -34,7 +35,8 @@ import { UsedByMillionsComponent } from './pages/home/used-by-millions/used-by-m
     HomeComponent,
     CakeComponent,
     StartInSecondsComponent,
-    UsedByMillionsComponent
+    UsedByMillionsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

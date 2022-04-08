@@ -159,3 +159,19 @@ thead {
 .loaderContainer {
     height: 80vh;
 }
+.animation2 {
+    animation-name: pan;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes pan {
+    0% {
+        transform: translatex(0px) translatey(0px)
+    }
+    50% {
+        transform: translatex(1px) translatey(5px);
+    }
+    100% {
+        transform: translatex(0px) translatey(0px)
+    }
+}

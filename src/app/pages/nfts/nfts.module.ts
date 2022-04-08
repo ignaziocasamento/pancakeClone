@@ -15,6 +15,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { FilterPipe } from 'src/app/shared/filter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { UploadComponent } from './upload/upload.component';
 
 
 
@@ -28,7 +29,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
     HotCollectionsComponent,
     NewestArrivalsComponent,
     NewestCollectionsComponent,
-    FilterPipe
+    FilterPipe,
+    UploadComponent
   ],
   imports: [
     CommonModule,
