@@ -4,6 +4,7 @@ import { ActivityComponent } from './activity/activity.component';
 import { CollectionsComponent } from './collections/collections.component';
 import { NftsComponent } from './nfts.component';
 import { OverviewComponent } from './overview/overview.component';
+import { UploadComponent } from './upload/upload.component';
 
 const routes: Routes = [
   {
@@ -12,7 +13,8 @@ const routes: Routes = [
     children: [
       { path: 'collections', component: CollectionsComponent },
       { path: 'activity', component: ActivityComponent },
-      { path: 'overview', component: OverviewComponent }
+      { path: 'overview', component: OverviewComponent },
+      { path: 'upload', component: UploadComponent }
     ]
   }
 ];

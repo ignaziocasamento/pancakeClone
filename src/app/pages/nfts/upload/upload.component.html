@@ -1,0 +1,129 @@
+<div class="container-fluid">
+    <div class="container p-2" *ngIf="card.length > 0; else noNfts">
+        <div class="row">
+            <div class="col col-md-4" *ngFor="let i of card">
+                <div class="card cardNFT" style="width: 18rem;">
+                    <div class="card-body">
+                        <h6 class="card-title h6 small">
+                            Username:
+                            <span>
+                                {{prefix + i.code}}
+                            </span>
+                        </h6>
+                        <h6 class="h6 small">
+                            Token:
+                            <span>
+                                {{i.token}}
+                            </span>
+                        </h6>
+                        <h6 class="h6 small">
+                            Event:
+                            <span [class]="i.event === 'Sold' ? 'text-danger' : '' ">
+                                {{i.event}}
+                            </span>
+                        </h6>
+                        <h6 class="h6 small">
+                            Price:
+                            <span>
+                                ${{i.price}}
+                            </span>
+                        </h6>
+                        <h6 class="h6 small">
+                            Creation Date:
+                            <span>
+                                {{i.date | date}}
+                            </span>
+                        </h6>
+                        <h5 class="h5 small text-success">
+                            Your NFT has just been successfully registered!
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #noNfts>
+        <div class="container d-flex justify-content-center py-5">
+            <div class="card cardEmpty d-flex align-items-center justify-content-center">
+                <p class="text-center my-1">Empty list.</p>
+                <p class="text-center my-1">Please Login to upload your NFT</p>
+            </div>
+        </div>
+    </ng-template>
+    
+    
+    
+    <ng-template #content let-modal>
+        <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Add your NFT</h4>
+            <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+        </div>
+        <div class="modal-body">
+            <form #f="ngForm" (ngSubmit)='submit(f)'>
+                <div class="mb-3">
+                    <label class="h6 name-text" for="username">Set your name to get a unique id</label>
+                    <div class="container d-flex align-items-center justify-content-center flex-column inputCont">
+                        <input #usernameField='ngModel' ngModel required name="username" type="text"
+                            class="name-text-content" placeholder="My name is..">
+                        <p class="text-danger small my-1" *ngIf="usernameField.invalid && usernameField.touched">The field
+                            is
+                            required</p>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="h6 name-text" for="token">Token Description</label>
+                    <div class="container d-flex align-items-center justify-content-center flex-column inputCont">
+                        <input #tokenField='ngModel' ngModel required name="token" type="text" class="name-text-content"
+                            placeholder="Name..">
+                        <p class="text-danger small my-1" *ngIf="tokenField.invalid && tokenField.touched">The field is
+                            required</p>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="h6 name-text" for="token">Event</label>
+                    <div class="container d-flex align-items-center justify-content-center flex-column inputCont">
+                        <select #eventField='ngModel' ngModel required name="event" type="text" class="name-text-content"
+                            placeholder="Name..">
+                            <option selected value="Listed">Listed</option>
+                            <option value="Modified">Modified</option>
+                            <option value="Sold">Sold</option>
+                            <option value="Delisted">Delisted</option>
+                        </select>
+                        <p class="text-danger small my-1" *ngIf="eventField.invalid && eventField.touched">The field is
+                            required
+                        </p>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="h6" for="price">Price</label>
+                    <div class="container d-flex align-items-center justify-content-center flex-column inputCont">
+                        <input #priceField='ngModel' ngModel required name="price" type="number" class="name-text-content"
+                            placeholder="Volume.." [min]="0">
+                        <p class="text-danger small my-1" *ngIf="priceField.invalid && priceField.touched">The field is
+                            required</p>
+    
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="h6" for="date">Creation Date</label>
+                    <div class="container d-flex align-items-center justify-content-center flex-column inputCont">
+                        <input #dateField='ngModel' ngModel required name="date" type="date" class="name-text-content"
+                            placeholder="Volume..">
+                        <p class="text-danger small my-1" *ngIf="dateField.invalid && dateField.touched">The field is
+                            required</p>
+    
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <a type="submit" class="btn btn-empty" (click)="modal.close('Submit click')">Submit</a> -->
+                    <button [disabled]='f.invalid' type="submit" class="btn btn-empty"
+                        (click)="modal.close('Submit click')">Submit</button>
+                </div>
+            </form>
+        </div>
+    
+    </ng-template>
+    <div class="container btnCont">
+        <a class="btn btn-full-tall" (click)="open(content)">Create your own NFTs</a>
+    </div>
+</div>

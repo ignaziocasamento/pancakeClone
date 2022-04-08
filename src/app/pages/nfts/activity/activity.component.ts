@@ -17,7 +17,7 @@ export class ActivityComponent implements OnInit {
   checkedClassG = '';
 
   activityNfts: IActivityTab[] = [];
-  filterEvent: any;
+  filterEvent: any[] = [];
 
   totalLength: any;
   page: number = 1;

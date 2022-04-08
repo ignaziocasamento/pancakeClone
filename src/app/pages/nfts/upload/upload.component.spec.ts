@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SwapComponent } from './swap.component';
+import { UploadComponent } from './upload.component';
 
-describe('SwapComponent', () => {
-  let component: SwapComponent;
-  let fixture: ComponentFixture<SwapComponent>;
+describe('UploadComponent', () => {
+  let component: UploadComponent;
+  let fixture: ComponentFixture<UploadComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SwapComponent ]
+      declarations: [ UploadComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SwapComponent);
+    fixture = TestBed.createComponent(UploadComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
