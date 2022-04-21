@@ -1,1 +1,41 @@
-<p>login works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <form #f="ngForm" (ngSubmit)="submit(f)">
+            <img class="logo-mobile" src="../../../assets/images/logo-mobile.png" alt="logo-pancake-swap">
+            <div class="mb-3">
+                <h4 class="h4 my-2">
+                    Login
+                </h4>
+            </div>
+            <div class="mb-3">
+                <label class="h6 name-text" for="username">Username</label>
+                <div class="container d-flex align-items-center justify-content-center flex-column inputCont">
+                    <input #usernameField="ngModel" ngModel required name="username" type="text"
+                        class="name-text-content" placeholder="">
+                    <p class="text-danger small my-1" *ngIf="usernameField.invalid && usernameField.touched">The field
+                        is
+                        required</p>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="h6 name-text" for="password">Password</label>
+                <div class="container d-flex align-items-center justify-content-center flex-column inputCont">
+                    <input #passwordField="ngModel" ngModel required name="password" type="password"
+                        class="name-text-content" placeholder="">
+                    <p class="text-danger small my-1" *ngIf="passwordField.invalid && passwordField.touched">The field
+                        is
+                        required</p>
+                </div>
+            </div>
+            <button [disabled]='f.invalid' type="submit" class="btn btn-empty">Submit</button>
+        </form>
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="p-2">
+                <a class="h6 small text-center" href="">Not registered yet? Register now</a>
+            </div>
+            <div class="p-2">
+                <a class="h6 small text-center" href="">Forgot password?</a>
+            </div>
+        </div>
+    </div>
+</div>
