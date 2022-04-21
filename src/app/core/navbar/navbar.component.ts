@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ILanguages } from 'src/app/models/langs';
 import { LanguagesService } from 'src/app/core/service/languages.service';
+import { AuthenticationService } from '../service/authentication.service';
 
 @Component({
   selector: 'psclone-navbar',
@@ -10,7 +11,7 @@ import { LanguagesService } from 'src/app/core/service/languages.service';
 export class NavbarComponent implements OnInit {
   langs!: ILanguages[];
 
-  constructor(private langService: LanguagesService) { }
+  constructor(private langService: LanguagesService, public authenticationService: AuthenticationService) { }
 
   getLangs() {
     this.langService.getLangs()

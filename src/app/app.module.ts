@@ -14,9 +14,8 @@ import { HomeComponent } from './pages/home/home/home.component';
 import { CakeComponent } from './pages/home/cake/cake.component';
 import { StartInSecondsComponent } from './pages/home/start-in-seconds/start-in-seconds.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ChartsModule } from 'ng2-charts';
-
-import {NgxPaginationModule} from 'ngx-pagination';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxPaginationModule } from 'ngx-pagination';
 import { UsedByMillionsComponent } from './pages/home/used-by-millions/used-by-millions.component';
 import { LoginComponent } from './core/login/login.component';
 
@@ -43,7 +42,9 @@ import { LoginComponent } from './core/login/login.component';
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,8 +1,8 @@
-export interface IUploadCard {
-    username: string,
-    code: string,
-    token: string,
-    event: 'Listed' | 'Modified' | 'Delisted' | 'Sold',
-    price: number,
-    date: Date
+export class IUploadCard {
+    id?: number
+    username?: string;
+    token?: string;
+    event?: 'Listed' | 'Modified' | 'Delisted' | 'Sold';
+    price?: number;
+    date?: Date
 }

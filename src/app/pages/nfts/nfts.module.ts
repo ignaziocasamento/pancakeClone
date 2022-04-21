@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule, DatePipe } from '@angular/common';
+import { CommonModule} from '@angular/common';
 import { ActivityComponent } from './activity/activity.component';
 import { CollectionsComponent } from './collections/collections.component';
 import { OverviewComponent } from './overview/overview.component';

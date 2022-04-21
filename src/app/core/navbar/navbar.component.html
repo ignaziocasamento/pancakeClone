@@ -91,8 +91,8 @@
       </ul>
 
       <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="btn btn-full-small a-padding" type="submit" role="button">Login</a>
+        <li class="nav-item" *ngIf="!authenticationService.isAuthenticated">
+          <a routerLink="login" class="btn btn-full-small a-padding" type="submit" role="button">Login</a>
         </li>
         <li class="nav-item anim">
           <a class="nav-link" href="#">

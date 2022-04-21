@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from 'src/app/core/service/authentication.service';
+import { IUploadCard } from 'src/app/models/uploadCard';
 
 @Component({
   selector: 'psclone-nfts',
@@ -6,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nfts.component.css']
 })
 export class NftsComponent implements OnInit {
+  
 
-  constructor() { }
+  constructor(public authenticationService: AuthenticationService) {}
 
   ngOnInit(): void {
   }
